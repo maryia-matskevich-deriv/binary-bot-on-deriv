@@ -9,7 +9,10 @@ const MenuLinks = () => {
         <div className='header__menu-item header__menu-links client_logged_in'>
             {!has_wallet_account && config.reports.visible && (
                 <div>
-                    <a className='url-reports-positions header__menu-links-item' href={config.tradershub.url}>
+                    <a
+                        className='url-reports-positions header__menu-links-item'
+                        href={has_wallet_account ? config.wallets.url : config.tradershub.url}
+                    >
                         <div className='header__icon-container'>
                             <img className='header__icon-text reports-icon' src='/public/images/traders_hub.png' />
                         </div>
