@@ -11,7 +11,7 @@ const MenuLinks = () => {
                 <div>
                     <a
                         className='url-reports-positions header__menu-links-item'
-                        href={has_wallet_account ? '/wallets' : config.tradershub.url}
+                        href={has_wallet_account ? config.wallets.url : config.tradershub.url}
                     >
                         <div className='header__icon-container'>
                             <img className='header__icon-text reports-icon' src='/public/images/traders_hub.png' />
